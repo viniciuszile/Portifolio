@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-size: small;
     width: 750px;
     height: 500px;
@@ -46,10 +47,10 @@
 
 /* Estilização  Dos Textos  */
 .texto_titulo {
-    font-size: 60px;
+    font-size: 50px;
     color: rgb(255, 255, 255);
     animation-duration: 2s;
-    animation-name: sliden;
+    animation-name: slidentitulo;
     animation-iteration-count: 1;
 }
 
@@ -72,6 +73,24 @@
     -ms-animation: fadeIn 5s;
 }
 
+.texto_nome {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: sliden2;
+    animation-iteration-count: 1;
+    margin-top: 0px;
+}
+
+.texto_cargo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: sliden3;
+    animation-iteration-count: 1;
+}
+
+
 /* Estilização  Dos Textos  */
 
 
@@ -80,7 +99,6 @@
 .imagem {
     width: 300px;
     height: 300px;
-    margin: 50px;
     border-radius: 100%;
 }
 
@@ -89,7 +107,34 @@
 
 
 /* Estilização  Dos Key Frames / Animações / Transições  */
-@keyframes sliden {
+@keyframes slidentitulo {
+
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 86.5%;
+        width: 100%;
+    }
+}
+
+@keyframes sliden2 {
+
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 62.5%;
+        width: 100%;
+    }
+}
+
+
+@keyframes sliden3 {
 
     from {
         margin-right: 100%;
@@ -101,6 +146,8 @@
         width: 100%;
     }
 }
+
+
 
 @keyframes fadeIn {
     0% {

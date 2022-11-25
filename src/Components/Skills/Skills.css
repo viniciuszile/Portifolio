@@ -1,0 +1,24 @@
+.contaier_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(158, 7, 7);
+    width: 100%;
+    height: 1200px;
+}
+
+.container_hardskills{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.container_softskills{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
