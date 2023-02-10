@@ -1,0 +1,82 @@
+/* estilazação containers da linha 1 ate 19*/
+.projetos-main {
+    width: 100%;
+    background-color: rgb(13, 36, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(13, 36, 47);
+    width: 80%;
+}
+/* estilazação containers da linha 19 ate 1*/
+
+
+/* estilazação cards da linha 22 ate 60*/
+.cards-projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    width: 275px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    box-shadow: 12px 7px rgb(0, 0, 0);
+    margin: 50px;
+}
+
+.nome-cards-projeto {
+    font-size: xx-large;
+    color: black;
+}
+
+.botao-cards-projeto {
+    width: 175px;
+    height: 30px;
+    background-color: rgb(13, 36, 47);
+    color: white;
+}
+
+.botao-cards-projeto:hover {
+    width: 175px;
+    height: 30px;
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(13, 36, 47);
+    border: rgb(0, 0, 0) solid 2px;
+    border-radius: 5px;
+    transform: scale(1.1)
+}
+/* estilazação cards da linha 60 ate 22*/
+
+
+/* estilazação extras da linha 63 ate 70*/
+.titulo {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+/* estilazação extras da linha 70 ate 63*/
+
+
+/* estilazação media querry da linha 73 ate 80*/
+@media (max-width: 801px) {
+    .container_projetos {
+        height: 500px;
+        overflow: scroll
+    }
+}
+/* estilazação media querry da linha 80 ate 73*/
+
+

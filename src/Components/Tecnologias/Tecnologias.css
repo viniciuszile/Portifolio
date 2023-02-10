@@ -1,0 +1,261 @@
+/* estilização global da linha 1 ate a 6 */
+:root {
+    --azul: rgb(13, 36, 47);
+    --branco: rgb(255, 255, 255)
+}
+
+/* estilização global da linha 6 ate a 1 */
+
+
+/* estilização containers da linha 9 ate a 6 */
+.Tecnologias_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+    width: 100%;
+}
+
+.container_Tecnologias {
+    width: 100%;
+    background-color: var(--azul);
+    text-align: center;
+    animation-direction: normal;
+}
+
+/* estilização global da linha 24 ate a 9 */
+
+
+/* estilização row da linha 29 ate a 57 */
+.row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--azul)
+}
+
+.row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--azul);
+}
+
+.row-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--azul);
+}
+
+/* estilização row da linha 57 ate a 28 */
+
+
+/* estilização cards da linha 48 ate a 69 */
+.cards {
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--branco);
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 14px 7px rgb(0, 0, 0);
+
+}
+
+.cards:hover {
+
+    scale: 1.1;
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 4px 2px rgb(0, 0, 0);
+}
+
+/* estilização cards da linha 69 ate a 48 */
+
+
+/* estilização imagens da linha 72 ate a 78  */
+.imagem-tecnologias {
+    width: 80px;
+    height: 80px;
+    margin-right: 0px;
+}
+
+/* estilização imagens da linha 78 ate a 72  */
+
+
+/* estilização textos da linha 81 ate a 93  */
+.texto-tecnologias {
+    margin: 4px;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+}
+
+.texto-titulo {
+    margin-top: 50px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+/* estilização textos da linha 93 ate a 81  */
+
+
+/* Animações Bordas da linha 96 ate a 197 */
+#html:hover {
+    border-top: solid 4px rgb(255, 109, 0);
+    border-left: solid 4px rgb(255, 109, 0);
+    border-right: solid 4px rgb(230, 81, 0);
+    border-bottom: solid 4px rgb(230, 81, 0);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#css:hover {
+    border-top: solid 4px rgb(3, 155, 229);
+    border-left: solid 4px rgb(3, 155, 229);
+    border-right: solid 4px rgb(2, 119, 189);
+    border-bottom: solid 4px rgb(2, 119, 189);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#js:hover {
+    border: solid 4px rgb(255, 214, 0);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#python:hover {
+    border-top: solid 4px rgb(255, 219, 76);
+    border-left: solid 4px rgb(255, 219, 76);
+    border-right: solid 4px rgb(55, 112, 160);
+    border-bottom: solid 4px rgb(55, 112, 160);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#react:hover {
+    border: solid 4px rgb(54, 177, 198);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#node:hover {
+    border: solid 4px rgb(33, 163, 102);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#mysql:hover {
+    border-top: solid 4px rgb(239, 146, 1);
+    border-left: solid 4px rgb(239, 146, 1);
+    border-right: solid 4px rgb(44, 123, 212);
+    border-bottom: solid 4px rgb(44, 123, 212);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#adaptabilidade:hover {
+    border-top: solid 4px rgb(122, 158, 68);
+    border-left: solid 4px rgb(52, 142, 216);
+    border-right: solid 4px rgb(122, 158, 68);
+    border-bottom: solid 4px rgb(52, 142, 216);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#criatividade:hover {
+    border-top: solid 4px rgb(34, 156, 198);
+    border-left: solid 4px rgb(34, 156, 198);
+    border-right: solid 4px rgb(255, 213, 66);
+    border-bottom: solid 4px rgb(255, 213, 66);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#trabalho:hover {
+    border-top: solid 4px rgb(255, 132, 167);
+    border-left: solid 4px rgb(253, 213, 89);
+    border-right: solid 4px rgb(255, 132, 167);
+    border-bottom: solid 4px rgb(131, 217, 255);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#comunicativo:hover {
+    border-top: solid 4px rgb(102, 224, 247);
+    border-left: solid 4px rgb(160, 229, 165);
+    border-right: solid 4px rgb(102, 224, 247);
+    border-bottom: solid 4px rgb(160, 229, 165);
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Animações Bordas da linha 197 ate a 96 */
+
+
+/* Animações da linha 200 ate a 210 */
+@keyframes flash {
+    50% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+/* Animações da linha 210 ate a 200 */
+
+
+/* media querry da linha 213 ate 247  */
+@media (max-width: 1600px) {}
+
+
+@media (max-width: 1280px) {}
+
+
+@media (max-width: 1124px) {
+    .imagem-tecnologias2 {
+        width: 70px;
+        height: 70px;
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .container_Hard-Skills {
+        flex-wrap: wrap;
+    }
+
+
+    .row-1 {
+        flex-wrap: wrap;
+    }
+
+    .row-2 {
+        flex-wrap: wrap;
+    }
+}
+
+/* media querry da linha 247 ate 213  */

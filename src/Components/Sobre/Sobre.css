@@ -1,0 +1,585 @@
+/* Estilização globais da linha 1 ate 12*/
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+:root{
+    --azul: rgb(13, 36, 47);
+    --branco: rgb(255,255,255)
+}
+
+* {
+    margin: 0px;
+}
+/* Estilização globais da linha 1 ate 12*/
+
+/* Estilização  Dos Containers da linha 14 ate 61 */
+.container_sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    
+}
+
+.Sobre_main{
+    background: var(--azul);  
+    width: 100%;
+    height:700px;
+    background-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.container_infos {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.826);
+}
+
+.container_imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    background-color: rgba(239, 16, 16, 0);
+    width: 750px;
+    height: 500px;
+    
+}
+
+.container_texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: small;
+    width: 750px;
+    height: 500px
+}
+/* Estilização  Dos Containers da linha 61 ate 14 */
+
+
+/* Estilização  Dos Textos da linha 68 ate 128  */
+.texto_titulo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: slidentitulo;
+    animation-iteration-count: 1;
+}
+
+.texto_sub-titulo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation-duration: 3s;
+    animation-name: sliden;
+    animation-iteration-count: 1;
+    margin-top: -3%;
+}
+
+.texto_sobre {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.texto_nome {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: sliden2;
+    animation-iteration-count: 1;
+    margin-top: 0px;
+}
+
+.texto_cargo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: sliden3;
+    animation-iteration-count: 1;
+}
+
+.texto_animado{
+    margin: 0px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+/* Estilização  Dos Textos  da linha 118 ate 68 */
+
+
+/* Estilização  Das Imagens da linha 123 ate 130 */
+.imagem {
+    width: 300px;
+    height: 300px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+/* Estilização  Das Imagens da linha 130 ate 123 */
+
+
+/* Estilização  Dos Key Frames / Animações / Transições da linha 135 ate 304 */
+@keyframes slidentitulo {
+
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 86.5%;
+        width: 100%;
+    }
+}
+
+@keyframes sliden2 {
+
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 62.5%;
+        width: 100%;
+    }
+}
+
+
+@keyframes sliden3 {
+
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 56%;
+        width: 100%;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* Quadrados */
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.739);
+    animation: animate 15s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 100px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+/* Estilização  Dos Key Frames / Animações / Transições da linha 304 ate 135 */
+
+
+/* media querry / responsividade da linha 308 ate 591 */
+@media (max-width: 1600px) {
+    .container_imagem {
+        width: 500px;
+    }
+
+    .container_texto {
+        width: 700px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .container_imagem {
+        width: 500px;
+    }
+
+    .container_texto {
+        width: 650px;
+    }
+}
+
+
+@media (max-width: 1124px) {
+    .container_imagem {
+        width: 450px;
+    }
+
+    .container_texto {
+        width: 500px;
+
+    }
+
+    .texto_sobre {
+        font-size: large;
+    }
+}
+
+@media (max-width: 960px) {
+    .container_imagem {
+        width: 400px;
+    }
+
+    .container_texto {
+        width: 400px;
+
+    }
+
+    .texto_sobre {
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container_imagem {
+        width: 300px;
+    }
+
+    .container_texto {
+        width: 330px;
+    }
+
+    .texto_nome {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        animation-duration: 2s;
+        animation-name: sliden2222;
+        animation-iteration-count: 1;
+        margin-top: 0px;
+    }
+
+    .texto_cargo {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        animation-duration: 2s;
+        animation-name: none;
+        animation-iteration-count: none;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    .zile{
+        margin: 0px;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+    
+
+}
+
+p {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    margin-top: 0px;
+}
+
+@media (max-width: 640px) {
+    .container_infos {
+        flex-wrap: wrap;
+    }
+
+    .container_imagem {
+        width: 250px;
+        height: 350px;
+        flex-wrap: wrap;
+    }
+
+    .container_texto {
+        width: 360px;
+        height: 300px;
+    }
+
+    .texto_titulo {
+        font-size: 45px;
+        margin-top: 55px;
+    }
+
+    .texto_sub-titulo {
+        font-size: 50px;
+    }
+
+    .texto_sobre {
+        font-size: 17px;
+    }
+
+    .texto_nome {
+        font-size: 40px;
+    }
+
+    .texto_cargo {
+        font-size: 25px;
+    }
+
+    .imagem {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+    .zile{
+        margin: 0px;
+        font-size: 27px;
+        color: rgb(255, 255, 255);
+    }
+    
+}
+
+@media (max-width: 640px) {
+    .container_infos {
+        flex-wrap: wrap;
+    }
+
+    .container_imagem {
+        width: 250px;
+        height: 350px;
+        flex-wrap: wrap;
+    }
+
+    .container_texto {
+        width: 360px;
+        height: 300px;
+    }
+
+    .texto_titulo {
+        font-size: 45px;
+        margin-top: 55px;
+    }
+
+    .texto_sub-titulo {
+        font-size: 50px;
+    }
+
+    .texto_sobre {
+        font-size: 17px;
+    }
+
+    .texto_nome {
+        font-size: 40px;
+    }
+
+    .texto_cargo {
+        font-size: 25px;
+    }
+
+    .imagem {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+    .zile{
+        margin: 0px;
+        font-size: 27px;
+        color: rgb(255, 255, 255);
+    }
+    
+}
+
+
+@media (max-width: 300px) {
+    .zile{
+        margin: 0px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+    }
+    .circles li:nth-child(1){
+        left: 25%;
+        width: 50px;
+        height: 50px;
+        animation-delay: 0s;
+    }
+    
+    
+    .circles li:nth-child(2){
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+    }
+    
+    .circles li:nth-child(3){
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+    }
+    
+    .circles li:nth-child(4){
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+    }
+    
+    .circles li:nth-child(5){
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+    }
+    
+    .circles li:nth-child(6){
+        left: 75%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 3s;
+    }
+    
+    .circles li:nth-child(7){
+        left: 35%;
+        width: 50px;
+        height: 50px;
+        animation-delay: 7s;
+    }
+    
+    .circles li:nth-child(8){
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+    
+    .circles li:nth-child(9){
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+    
+    .circles li:nth-child(10){
+        left: 85%;
+        width: 50px;
+        height: 50px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }   
+}
+/* media querry / responsividade da linha 308 ate 591 */
